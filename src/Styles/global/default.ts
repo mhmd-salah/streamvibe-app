@@ -12,11 +12,11 @@ export const HeadingBanner = styled.h1`
   font-size: ${theme.typography.fontSize.superTitle}; // 48px
 
   ${media.lg`
-    font-size: ${theme.typography.fontSize.title}!important; // 32px
+    font-size: 32px !important; // 32px
   `}
 
   ${media.lg`
-    font-size: ${theme.typography.fontSize.xxlarge}!important; // 24px
+    font-size: 24px !important; // 24px
   `}
 `;
 
@@ -24,23 +24,23 @@ export const HeadingTitle = styled.h2`
   font-size: ${theme.typography.fontSize.title};
 
   ${media.lg`
-    font-size: ${theme.typography.fontSize.xxlarge}!important;
+    font-size: 24px !important;
   `}
 
   ${media.lg`
-    font-size: ${theme.typography.fontSize.xlarge}!important;
+    font-size: 20px !important;
   `}
 `;
 
 export const HeadingTitleMd = styled.h3`
-  font-size: ${theme.typography.fontSize.xxlarge};
+  font-size: 24px;
 
   ${media.xxl`
-    font-size: ${theme.typography.fontSize.xlarge}!important;
+    font-size: 20px !important;
   `}
 
   ${media.lg`
-    font-size: ${theme.typography.fontSize.large}!important;
+    font-size: 18px !important;
   `}
 `;
 
@@ -53,7 +53,7 @@ const commonText = css`
       font-size:15px !important;
       line-height:1.6;     `}
   ${media.xs`
-      font-size: ${theme.typography.fontSize.small}!important;
+      font-size: 14px !important;
       line-height: 1.5;
     `}
 `;
@@ -71,7 +71,7 @@ const commonTextStyles = css`
   `}
 
   ${media.xs`
-    font-size: ${theme.typography.fontSize.small}!important;
+    font-size: 14px !important;
     line-height: 1.5;
   `}
 `;

@@ -64,7 +64,6 @@ function Header() {
               {navItems.map((item, index) => (
                 <li key={index} className="nav-item">
                   <Link
-                    onClick={() => dispatch(closeSidebar())}
                     to={item.to}
                     className={`nav-link inline-flex items-center justify-center text-center ${
                       location.pathname === item.path ? "active" : ""

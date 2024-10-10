@@ -92,6 +92,5 @@ export const Text = styled.p`
 export const Container = styled.div`
   max-width: ${theme.breakpoints.xxxl};
   margin: 0 auto;
-  padding-left: ${theme.spacing.md};
-  padding-right: ${theme.spacing.md};
+  padding-inline: ${theme.spacing.md};
 `;

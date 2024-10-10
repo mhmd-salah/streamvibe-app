@@ -18,8 +18,7 @@ export const HeaderWrapper = styled.header`
   `}
   &.sm-header {
     height: auto !important;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-block: 12px;
     box-shadow: ${theme.shadows.medium};
     border-bottom: 2px solid ${theme.colors.black10};
     .nav-list {
@@ -93,19 +92,19 @@ export const NavWrapper = styled.nav`
         `}
     }
   }
-  .nav-link{
-    height:55px;
-    min-width:100px;
-    padding:14px;
+  .nav-link {
+    height: 55px;
+    min-width: 100px;
+    padding: 14px;
     border-radius: 8px;
     color: ${theme.colors.gray75};
-    font-weight:600;
-    &.active{
-      background-color:${theme.colors.black10};
-      color:${theme.colors.white};
+    font-weight: 600;
+    &.active {
+      background-color: ${theme.colors.black10};
+      color: ${theme.colors.white};
     }
-    &:hover{
-      color:${theme.colors.primary}
+    &:hover {
+      color: ${theme.colors.primary};
     }
   }
   ${media.lg`
@@ -113,8 +112,51 @@ export const NavWrapper = styled.nav`
       right:0;
       top:0;
       height:100%;
+      width: 260px;
       background: ${theme.colors.black10};
+      box-shadow:rgba(0,0,0,0.4) 0 7px 29px 0;
+      align-items: flex-start;
+      border-radius: 0;
+      padding: 32px 12px;
+      transform: translateX(100%);
+      z-index: 999;
+      &.show{
+      transform: translateX(0);
+      }
   `}
 `;
 
-export const HeaderIconsWrapper = styled.div``;
+export const HeaderIconsWrapper = styled.div`
+  column-gap: 10px;
+
+  .icon-link {
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    background-color: transparent;
+
+    ${media.lg`
+        width:26px
+        height:26px;
+        min-width:26px;
+   `}
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    &:hover {
+      opacity: 0.8;
+      scale: 0.99;
+    }
+    &.sidebar-open-btn {
+      display: none;
+
+      ${media.lg`
+        display: inline-flex;
+        
+      `}
+    }
+  }
+`;

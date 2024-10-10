@@ -239,6 +239,10 @@ export const GlobalStyles = createGlobalStyle`
     .bg-white{
         background-color: ${theme.colors.white};
     }
+    .bg-halfBlack{
+        background-color:black;
+        opacity: 0.1;
+    }
     .bg-black{
         background-color: ${theme.colors.primary};
     }
@@ -250,6 +254,9 @@ export const GlobalStyles = createGlobalStyle`
     }
     .bg-black12{
         background-color: ${theme.colors.black12};
+    }
+    .bg-blur{
+        backdrop-filter: blur(10px);
     }
 
     // text size classes

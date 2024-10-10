@@ -33,7 +33,7 @@ const routes = createBrowserRouter([
   },
   {
     path: "*",
-    element: <PageNotFound />,
+    element: <PageNotFound   />,
   }
 ]);
 

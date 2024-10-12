@@ -141,6 +141,13 @@ export const theme = {
 };
 
 
+export const med ={
+  xxl:(...args:[TemplateStringsArray])=>css`
+    @media(max-width:${theme.breakpoints.xxl}){
+      ${css(...args)}
+    }
+  `
+}
 
 // Reusable media query function
 export const media = {
@@ -149,6 +156,7 @@ export const media = {
       ${css(...args)}
     }
   `,
+
   xl: (...args: [TemplateStringsArray]) => css`
     @media (max-width: ${(props) => props.theme.breakpoints.xl}) {
       ${css(...args)}

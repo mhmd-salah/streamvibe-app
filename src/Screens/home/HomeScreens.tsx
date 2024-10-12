@@ -1,7 +1,7 @@
 
 function HomeScreens() {
   return (
-    <div>HomeScreens</div>
+    <div className="pg-home"></div>
   )
 }
 

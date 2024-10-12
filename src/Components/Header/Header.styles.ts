@@ -113,7 +113,7 @@ export const NavWrapper = styled.nav`
       top:0;
       height:100%;
       width: 260px;
-      background: ${theme.colors.black10};
+      background: #1a1a1a ;
       box-shadow:rgba(0,0,0,0.4) 0 7px 29px 0;
       align-items: flex-start;
       border-radius: 0;

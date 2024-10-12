@@ -30,7 +30,10 @@ function Header() {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+      if (
+        navRef.current &&
+        !(navRef.current as Node).contains(event.target as Node)
+      ) {
         dispatch(closeSidebar());
       }
     };

@@ -2,8 +2,9 @@ import { media, theme } from "./../../Styles/theme/theme";
 import { styled } from "styled-components";
 
 export const FooterWrapper = styled.footer`
-  padding-top: 60px;
+  padding-top: 60px;  
   margin-inline: auto;
+  /* text-align: center; */
 
   ${media.xl`
         padding-top: 40px;
@@ -39,6 +40,7 @@ export const FooterWrapper = styled.footer`
     column-gap: 40px;
     row-gap: 16px;
     padding-top: 24px;
+    padding-bottom: 24px;
     border-top: 1px solid ${theme.colors.black15};
 
     ${media.lg`
@@ -49,14 +51,61 @@ export const FooterWrapper = styled.footer`
       ${media.sm`
             justify-content:center;
           `}
-          .bottom-links{
-            padding:0 20px;
-            display:inline-flex;
-            justify-content:center;
-            border-right:1px solid ${theme.colors.black15}
+      .bottom-link {
+        padding: 0 20px;
+        display: inline-flex;
+        justify-content: center;
+        border-right: 1px solid ${theme.colors.black15};
+        ${media.sm`
+            padding:0 12px;
+          `}
+      }
+      li {
+        &:last-child {
+          .bottom-link {
+            border-right: none;
+            padding-right: 0;
           }
+        }
+        &:first-child {
+          .bottom-link {
+            ${media.lg`
+                padding-left:0;
+              `}
+          }
+        }
+      }
     }
   }
 `;
 
-export const FooterItemWrapper = styled.div``;
+export const FooterItemWrapper = styled.div`
+  .item-title {
+    margin-bottom: 20px;
+  }
+  .item-text-links {
+    display: grid;
+    row-gap: 12px;
+    a{
+      display:inline-flex;
+    }
+  }
+  .item-icons-links {
+    column-gap: 12px;
+
+    ${media.xs`
+        justify-content:center;
+      `}
+      .item-icon-link{
+        border-radius:8px;
+        border: 1px solid ${theme.colors.black15};
+        width:48px;
+        height:48px;
+        border-radius:6px;
+        img{
+          width: 24px;
+          height: 24px;
+        }
+      }
+  }
+`;

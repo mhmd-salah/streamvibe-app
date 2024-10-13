@@ -7,10 +7,12 @@ function BaseLayout() {
   return (
     <PageWrapper>
       <Header />
-      <main style={{
-        minHeight:"100vh"
-      }}>  
-        <Outlet/>
+      <main
+        style={{
+          minHeight: "100vh",
+        }}
+      >
+        <Outlet />
       </main>
       <Footer />
     </PageWrapper>

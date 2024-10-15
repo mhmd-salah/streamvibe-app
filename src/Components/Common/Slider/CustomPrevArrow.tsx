@@ -10,6 +10,7 @@ function CustomPrevArrow({ onClick }: iprops) {
       className="custom-prev-arrow bg-black06 flex item-center justify-center"
       onClick={onClick}
     >
+      
       <img src={Icons.ArrowLeft} alt="" />
     </button>
   );

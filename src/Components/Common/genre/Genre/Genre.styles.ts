@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
-export const GenreWrapper =styled.div`
-  position:relative;
-`
+export const GenreWrapper = styled.div`
+  position: relative;
+`;

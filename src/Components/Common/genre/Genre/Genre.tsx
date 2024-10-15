@@ -8,16 +8,19 @@ import { GENRES } from "../../../../Constant/mockData";
 import GenreItem from "../GenreItem/GenreItem";
 import { SliderWrapper } from "../../Slider/Slider.styles";
 import Slider from "react-slick";
+import CustomNextArrow from "../../Slider/CustomNextArrow";
+import CustomPrevArrow from "../../Slider/CustomPrevArrow";
 
 const Genre = () => {
   const settings = {
     dots: true,
-    Infinity: true,
     autoPlay: true,
-    autoPlaySpeed: 600,
-    speed: 300,
+    Infinity: true,
+    autoPlaySpeed: 60,
+    speed: 30,
     slidesToShow: 5,
     slidesToScroll: 2,
+    autoplay:true,
     responsive: [
       {
         breakpoint: 1200,
@@ -54,10 +57,14 @@ const Genre = () => {
       />
       <Container>
         <SliderWrapper>
-          <Slider {...settings} >
+          <Slider
+            {...settings}
+            nextArrow={<CustomNextArrow onClick={() => {}} />}
+            prevArrow={<CustomPrevArrow onClick={() => {}} />}
+          >
             {GENRES?.map((genre) => (
               <GenreItem data={genre} key={genre.id} />
-            ))}
+            ))} 
           </Slider>
         </SliderWrapper>
       </Container>

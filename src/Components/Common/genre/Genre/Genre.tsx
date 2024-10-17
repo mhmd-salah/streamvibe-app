@@ -17,7 +17,7 @@ const Genre = () => {
     autoPlay: true,
     Infinity: true,
     autoPlaySpeed: 60,
-    speed: 30,
+    speed: 300,
     slidesToShow: 5,
     slidesToScroll: 2,
     autoplay:true,

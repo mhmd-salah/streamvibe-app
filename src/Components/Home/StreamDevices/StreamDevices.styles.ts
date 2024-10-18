@@ -41,6 +41,16 @@ export const StreamDevicesWrapper = styled.section`
       height: 32px;
       img {
         width: auto;
+        --a: 8deg; 
+        aspect-ratio: 1;
+        transform: perspective(400px) rotate3d(var(--i, 1, -1), 0, var(--a));
+        mask: linear-gradient(135deg, #000c 40%, #000, #000c 60%) 100% 100%/240%
+          240%;
+        transition: 0.4s;
+      }
+      img:hover {
+        --i: -1, 1;
+        mask-position: 0 0;
       }
     }
     .item-body {

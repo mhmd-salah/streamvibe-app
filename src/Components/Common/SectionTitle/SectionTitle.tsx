@@ -22,7 +22,7 @@ function SectionTitle({ title, text, rightContentType }: Iprops) {
             <Paragraph>{text}</Paragraph>
           </div>
           <div className="title-right">
-            {rightContentType === "title-text" && (
+            {rightContentType === "title-button" && (
               <BaseLinkPrimary to={""}>
                 <span className="btn-text">Ask A Qusetion</span>
               </BaseLinkPrimary>

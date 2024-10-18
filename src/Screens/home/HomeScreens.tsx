@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { scrollToTop } from "../../utilities/ScrollToTop";
 import { Banner, Genre } from "../../Components";
 import StreamDevices from "../../Components/Home/StreamDevices/StreamDevices";
+import CommonQuestions from "../../Components/Home/CommonQuestions/CommonQuestions";
 
 function HomeScreens() {
   useEffect(()=>scrollToTop(),[])
@@ -10,6 +11,7 @@ function HomeScreens() {
       <Banner/>
       <Genre/>
       <StreamDevices/>
+      <CommonQuestions/>
     </div>
   )
 }

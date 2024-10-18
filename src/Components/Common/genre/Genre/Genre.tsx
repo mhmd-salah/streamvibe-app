@@ -49,7 +49,7 @@ const Genre = () => {
     ],
   };
   return (
-    <GenreWrapper>
+    <GenreWrapper className="section-y">
       <SectionTitle
         title="Explore our wide variety of categories"
         text="Whether you're looking for comedy to make you laugh, a drama to make you think or a documentary to learn something new"

@@ -1,21 +1,9 @@
-class Stack {
-  constructor() {
-    this.items = [];
-  }
-  push(item){
-    return this.items.push(item)
-  }
+let userName = "";
 
-  pop(){
-    return this.items.pop()
-  }
-  peek(){
-    return this.items[this.items.length-1]
-  }
+let user = {
+  userName: (userName ||= "unknown"),
+  userAge: 20 ,
+};
 
-}
-
-
-let obj = {}
-obj[0] = "mohamed";
-console.log(obj[0]);
+console.log(userName) //=> unknown
+console.log(user.userName); //=> unknown

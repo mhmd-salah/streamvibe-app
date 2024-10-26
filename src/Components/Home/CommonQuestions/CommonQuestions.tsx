@@ -68,7 +68,7 @@ const CommonQuestionItem: React.FC<CommonQuestionItemProps> = ({
   const tempIndex = count < 10 ? `0${count}` : count;
   const [isCollapsed, setIsCollapsed] = useState(true);
 
-  const handleAcccordion = () => {
+  const handleAccordion = () => {
     setIsCollapsed(!isCollapsed);
   };
   return (
@@ -78,21 +78,26 @@ const CommonQuestionItem: React.FC<CommonQuestionItemProps> = ({
           {tempIndex}
         </div>
         <div className="item-body">
-          <div className="item-head flex item-start justify-between">
+          <div className="item-head flex item-start justify-between" onClick={handleAccordion}>
             <h4 className="item-title text-xl">{data.question}</h4>
             <button className="item-btn bg-transparent">
+
               {!isCollapsed ? (
                 <img src={Icons.Plus} alt="plus" />
               ) : (
                 <img src={Icons.Minus} alt="minus" />
               )}
+
             </button>
           </div>
-          <div className={`item-text ${!isCollapsed?"show":""}`}>
-            <Paragraph>{data.}</Paragraph>
+
+          <div className={`item-text ${!isCollapsed ? "show":""}`}>
+            <Paragraph>{data.answer}</Paragraph>
           </div>
+
         </div>
       </div>
     </CommonQItemWrapper>
   );
 };
+

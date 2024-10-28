@@ -9,7 +9,7 @@ import { SectionTitleWrapper } from "./SectionTitle.styles";
 interface Iprops {
   title: string;
   text: string;
-  rightContentType: string;
+  rightContentType?: string;
 }
 
 function SectionTitle({ title, text, rightContentType }: Iprops) {

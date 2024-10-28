@@ -1,0 +1,14 @@
+/* @property --bg-color {
+  style: "<color>";
+  initial-value: teal;
+  inherits: false;
+}
+
+div {
+  --bg-color: teal;
+  background-color: var(--bg-color);
+}
+
+div:hover {
+  --bg-color: red;
+} */

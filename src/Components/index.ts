@@ -9,3 +9,4 @@ export { default as Banner } from "./Home/Banner/Banner";
 export { default as Genre } from "./Common/genre/Genre/Genre";
 export { default as GenreItem } from "./Common/genre/GenreItem/GenreItem";
 
+

@@ -61,7 +61,8 @@ const SubscriptionItem = ({ subscription }: props) => {
             ${subscription.monthly_price}
           </p>
         </div>
-        <div className="item-btn-group flex items-center flex-wrap">
+
+        <div className="item-btn-group flex item-center flex-wrap">
           <BaseLinkSecondary to={""} className="item-btn">
             <span className="btn-text">Start Free Trial</span>
           </BaseLinkSecondary>

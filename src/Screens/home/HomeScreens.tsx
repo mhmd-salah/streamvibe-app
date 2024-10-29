@@ -4,6 +4,7 @@ import { Banner, Genre } from "../../Components";
 import StreamDevices from "../../Components/Home/StreamDevices/StreamDevices";
 import CommonQuestions from "../../Components/Home/CommonQuestions/CommonQuestions";
 import Subscription from "../../Components/Home/Subscription/Subscription";
+import FreeTrial from "../../Components/Common/FreeTrial/FreeTrial";
 
 function HomeScreens() {
   useEffect(()=>scrollToTop(),[])
@@ -14,6 +15,7 @@ function HomeScreens() {
       <StreamDevices/>
       <CommonQuestions/>
       <Subscription/>
+      <FreeTrial/>
     </div>
   )
 }

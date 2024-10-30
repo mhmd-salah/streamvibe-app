@@ -10,7 +10,7 @@ const FreeTrial = () => {
   return (
     <FreeTrialWrapper className="section-py">
       <Container>
-        <div className="free-trial content bg-black06 flex  items-center justify-between flex-wrap">
+        <div className="free-trial-content bg-black06 flex  items-center justify-between flex-wrap">
           <HeadingTitle>Start your free trial today!</HeadingTitle>
           <Paragraph>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis

@@ -10,3 +10,4 @@ export { default as Genre } from "./Common/genre/Genre/Genre";
 export { default as GenreItem } from "./Common/genre/GenreItem/GenreItem";
 
 
+export {default as FreeTrial} from "./Common/FreeTrial/FreeTrial"
